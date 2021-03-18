@@ -1,5 +1,5 @@
 # Weather-Web-App
-A weather web app created using Django as a backend framework and Open Weather's API
+A weather web app created using Django as a backend framework and Open Weather Map's API
 
 ### Installing
 Make sure you install these modules in order to run the project
