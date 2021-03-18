@@ -2,10 +2,7 @@
 A weather web app created using Django as a backend framework and Open Weather's API
 
 ### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
+Make sure you install these modules in order to run the code
 
 ```
 pip install virtualenv
@@ -16,7 +13,3 @@ pip install pyowm
 ```
 
 
-
-```
-until finished
-```
