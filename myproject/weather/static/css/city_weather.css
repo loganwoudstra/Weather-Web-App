@@ -1,0 +1,200 @@
+h1{
+    font-size: 300%;
+    padding-top: 10px;
+    padding-left:10px;
+}
+
+#weather-short img{
+    position: relative;
+    top: -25px;
+    left: -10px;
+    float: right;
+    height: 190px;
+    width: 190px;
+}
+
+#weather-short .title{
+    width: 60%;
+}
+
+#weather-short table, th, td {
+    position: relative;
+    top: -20px;
+    width: 100%;
+    padding: 0px;
+}
+
+#weather-short .time{
+    color:#6a6a6a;
+    font-size: 125%;
+}
+
+#weather-short .temp{
+    color: black;
+    position: relative;
+    top: -20px;
+    font-weight: 600;
+    display: inline-block;
+    font-size: 650%;
+}
+
+#weather-short .alerts{
+    color: #FFFFFF;
+    position:relative;
+    left: -5px;
+    top: -5px;
+    font-size:90%
+}
+
+#weather-short .high{
+    float: right;
+    position: relative;
+    top: -50px;
+    left: -60px;
+    font-weight: 600;
+    margin: 0;
+    font-size: 175%;
+}
+
+#weather-short .description{
+    float: left;
+    font-weight: normal;
+    font-size: 150%;
+    position: relative;
+    top: -50px;
+}
+
+#weather-long p{
+    margin: 10px;
+    font-size: 111%;
+}
+
+#weather-long .conditions{
+    width: 24%;
+    font-weight: 550;
+}
+
+#weather-long .nums{
+    line-height: 1.65;
+    width: 26%;
+    padding-right: 10px;
+    text-align: right;
+}
+
+#weather-long img{
+    position: relative;
+    top: -5px;
+    width: 30px;
+}
+
+#weather-long .dew-point{
+    width: 25px;
+}
+
+#weather-long .feels-like{
+    width: 27px;
+}
+
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  margin: 0px;
+  filter: invert(1);
+}
+
+.carousel-control-next-icon{
+    position: relative;
+    left: 60px;
+}
+
+.carousel-control-prev-icon{
+    position: relative;
+    left: -60px;
+}
+
+.carousel-indicators li {
+    position: relative;
+    top: 50px;
+    background-color: #D3D3D3;
+}
+.carousel-indicators .active {
+    background-color: #000000;
+}
+
+#hourly .hour{
+    text-align: center;
+    width: 16.6666666%;
+    border-right:3px solid #CDCDCD;
+}
+
+#hourly .hour:last-child {
+  border-right: hidden;
+}
+
+#hourly img{
+    height: 80px;
+}
+
+#hourly .temp{
+    font-size: 200%;
+}
+
+#daily{
+    position: relative;
+    top: 20px;
+}
+
+#daily .day{
+    text-align: center;
+    width: 14.2857%;
+    border-right:3px solid #CDCDCD;
+}
+
+#daily .day:last-child {
+  border-right: hidden;
+}
+
+#daily img{
+    height: 80px;
+}
+
+#daily .temp{
+    font-size: 180%;
+}
+
+#footer{
+    text-align: center;
+    background-color:#EBECF0;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+}
+
+.freepik{
+    position: relative;
+    left: -10%;
+}
+
+.freepik a{
+    font-weight: 600;
+}
+
+.owm{
+    position: relative;
+    left: 10%;
+}
+
+.owm a{
+    font-weight: 600;
+}
+
+main {
+    padding-bottom: 90px
+}

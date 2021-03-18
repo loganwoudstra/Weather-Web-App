@@ -1,0 +1,62 @@
+.search-move-right{
+    padding-left:50px;
+}
+
+.search-move-down{
+    padding-top:15px;
+}
+.align-center{
+    text-align:center;
+ }
+
+.search-title-large {
+    font-size:270%;
+}
+
+.badge-large{
+    font-size:90%;
+}
+
+.font-grey{
+    color:#6a6a6a;
+}
+
+body{
+    margin: 0;
+    padding:0;
+    height:100%;
+}
+
+.city:link, .city:visited, .city:hover, .city:active{
+    color:black;
+}
+
+#footer {
+    background-color:#EBECF0;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+}
+
+.inline{
+    display:inline;
+}
+
+.freepik{
+    position: relative;
+    left: -10%;
+}
+
+.freepik a{
+    font-weight: 600;
+}
+
+.owm{
+    position: relative;
+    left: 10%;
+}
+
+.owm a{
+    font-weight: 600;
+}

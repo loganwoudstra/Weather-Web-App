@@ -1,0 +1,21 @@
+{% extends 'weather/base.html' %}
+
+{% block title%}Weather Site{% endblock %}
+
+{% block content %}
+
+{% load static %}
+<link href="{% static 'css/home.css' %}" rel="stylesheet">
+
+<h1 class="align-center home-move-down home-title-large">Weather Site<br><img class="icon" src="{% static 'icons/favicon.png' %}"></h1>
+
+<div class="row justify-content-center" >
+    <form class="form-inline my-2 my-lg-0" action="{% url 'search' %}" method="get">
+          <input class="form-large form-control mr-sm-2" type="text" placeholder="e.x. Tokyo, JP" aria-label="Search" name="city">
+          <button class="form-large btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+    </form>
+</div>
+<p class="align-center"><br>If your city is in the United States, replace the country code with your state code
+    <br>Example - New York, NY or Los Angeles, CA
+</p>
+{% endblock %}

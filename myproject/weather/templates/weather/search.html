@@ -1,0 +1,73 @@
+{% extends 'weather/base.html' %}
+{% load custom_tags %}
+
+{%  block title %}Search Results{% endblock %}
+
+{% block content %}
+
+{% load static %}
+<link href="{% static 'css/search.css' %}" rel="stylesheet">
+    {% if city_list %}
+        <h1 class="align-center search-title-large search-move-down">Search Result Found For: {{location}}</h1>
+        <p class="align-center font-grey">Click on a city for more information</p>
+        <ul class="search-move-right">
+            {% for city in city_list %}
+                {% with city_attributes|list_item:forloop.counter0 as attr %}
+                {% if attr|list_item:'state' %}
+                     <li>
+                        <a class="city" href="/{{attr|dict_value:'id'}}">
+                            <h4 class="inline">
+                                {{attr|dict_value:'name'}}, {{attr|dict_value:'state'}}, {{attr|dict_value:'country'}}
+                            </h4>
+                        </a>
+                {% else %}
+                <li>
+                    <a class="city" href="/{{attr|dict_value:'id'}}">
+                        <h4 class="inline">
+                            {{attr|dict_value:'name'}}, {{attr|dict_value:'country'}}
+                        </h4>
+                    </a>
+                {% endif %}
+
+                {% with attr|dict_value:'icon' as icon %}
+                    {% with 'icons/forecast/'|add:icon|add:'.png' as image_static %}
+                        <img style="height:50px" src="{% static image_static %}" alt="image">
+                    {% endwith %}
+                {% endwith %}
+
+
+                    </li>
+            <p><span class="badge badge-pill badge-primary badge-large">{{attr|dict_value:'temp'}}°C</span>
+                Condition - {{attr|dict_value:'description'}},
+                Wind Speed - {{attr|dict_value:'wind'}} km/h,
+                Humidity - {{attr|dict_value:'humidity'}}%
+            </p>
+
+
+            {% endwith %}
+        {% endfor %}
+        </ul>
+
+        {% else %}
+            <h1 class="align-center">No Results Found For: {{location}}</h1>
+            <p class="search-move-right">
+                Make sure you have spelt the location correct, and have input a valid Country code(State code if you are in
+                the United States)<br>
+                Examples of valid locations: Tokyo, JP - Rome, IT - Lagos, NG - New York, NY
+            </p>
+        {% endif %}
+{% endblock %}
+
+{% block footer %}
+    <div id="footer">
+        <h4>Accurate Search Results</h4>
+        <p>For a more accurate search result, make sure you have formatted the location's name correctly. Enter into the
+            search bar the city's name, followed by a comma, then a 2-letter country/state code. Example - London, GB or Tokyo, JP or New York, NY</p>
+        <div class="align-center">
+            <span class="freepik">Icons made by -  <a href="https://www.flaticon.local/authors/freepik" title="Freepik">Freepik</a></span>
+            <span class="owm">Weather API - <a href="https://openweathermap.org/" title="OpenWeatherMap">OpenWeatherMap</a></span>
+        </div>
+    </div>
+{% endblock %}
+
+
