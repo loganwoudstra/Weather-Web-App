@@ -1,5 +1,5 @@
 # Weather-Web-App
-A weather web app which allows users to access the current weather, the weather forecast for the next 24 hours, the weather forecast for the next week, and any weather warning that may be in effect for any city around the world
+A weather web app which allows users to access the current weather, the weather forecast for the next 24 hours, the weather forecast for the next week, and any weather warnings that may be in effect, for any city around the world
 
 ## Installing
 Make sure you install these modules in order to run the project
