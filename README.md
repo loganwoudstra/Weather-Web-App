@@ -13,6 +13,6 @@ pip install pyowm
 ```
 
 ### Running the Server
-In order to run the server, you must add the script parameter 'runserver' to the file manage.py
+In order to run the server, you must add the script parameter 'runserver' to the file 'manage.py', then run the file.
 
 
