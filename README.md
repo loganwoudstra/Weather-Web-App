@@ -1,21 +1,21 @@
 # Weather-Web-App
 A weather web app which allows users to access the current weather, the weather forecast for the next 24 hours, the weather forecast for the next week, and any weather warnings that may be in effect for any city around the world
 
-## Installing
-Make sure you install these modules in order to run the project
+## How to install this app on your computer
+### 1. Install the requirement.txt on your computer using pip
 
-```
-pip install virtualenv
-pip install django
-pip install django-crispy-forms
-pip install requests
-pip install pyowm
+```python
+pip install -r requirements.txt
 ```
 
-## Running the Server
-In order to run the server, you must run the following line in command line
-
+### 2.  After install all the requirement.txt extract the project and open the project, type this on your terminal 
+```python
+python manage.py makemigrations
+python manage.py migrate
 ```
+
+### 3. Run the server using 
+```python
 python manage.py runserver
 ```
 
