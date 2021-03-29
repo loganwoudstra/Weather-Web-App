@@ -1,4 +1,4 @@
-# Weather-Web-App
+# Weather-Web-App 
 A weather web app which allows users to access the current weather, the weather forecast for the next 24 hours, the weather forecast for the next week, and any weather warnings that may be in effect for any city around the world
 
 ## How to install this app on your computer
