@@ -2,19 +2,25 @@
 A weather web app which allows users to access the current weather, the weather forecast for the next 24 hours, the weather forecast for the next week, and any weather warnings that may be in effect for any city around the world
 
 ## How to install this app on your computer
-### 1. Install the requirement.txt on your computer using pip
+### 1. Clone this repository
+Change the current working directory to the location where you want the cloned directory.
+```terminal
+$ git clone https://github.com/loganwoudstra/News-Aggregator-Web-App.git 
+```
+
+### 2. Install requirement.txt
 
 ```python
 pip install -r requirements.txt
 ```
 
-### 2.  After install all the requirement.txt extract the project and open the project, type this on your terminal 
+### 3. Make migrations
 ```python
 python manage.py makemigrations
 python manage.py migrate
 ```
 
-### 3. Run the server using 
+### 4. Run the server
 ```python
 python manage.py runserver
 ```
