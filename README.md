@@ -5,7 +5,7 @@ A weather web app which allows users to access the current weather, the weather 
 ### 1. Clone this repository
 Change the current working directory to the location where you want the cloned directory.
 ```terminal
-$ git clone https://github.com/loganwoudstra/News-Aggregator-Web-App.git 
+git clone https://github.com/loganwoudstra/News-Aggregator-Web-App.git 
 ```
 
 ### 2. Install requirement.txt
